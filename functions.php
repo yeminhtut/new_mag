@@ -95,14 +95,14 @@ function warrior_required_plugins() {
 		// 	'slug'			=> 'wp-pagenavi',
 		// 	'required'		=> false,
 		// ),
-		array(
-			'name'			=> 'ZillaShortcodes',
-			'version' 		=> '2.0.2',
-			'slug'			=> 'zilla-shortcodes',
-			'source'		=> get_template_directory() . '/plugins/zilla-shortcodes.zip',
-			'external_url'	=> '',
-			'required'		=> true,
-		),
+		// array(
+		// 	'name'			=> 'ZillaShortcodes',
+		// 	'version' 		=> '2.0.2',
+		// 	'slug'			=> 'zilla-shortcodes',
+		// 	'source'		=> get_template_directory() . '/plugins/zilla-shortcodes.zip',
+		// 	'external_url'	=> '',
+		// 	'required'		=> true,
+		// ),
 	);
 
 	$string = array(

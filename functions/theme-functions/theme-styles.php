@@ -29,18 +29,18 @@ if ( ! function_exists( 'warrior_enqueue_scripts' ) ) {
 		wp_enqueue_script('newmagz-functions', get_template_directory_uri() .'/js/functions.js', array('jquery'), null, true);
 			
 		// Load all CSS files		
-		wp_enqueue_style('newmagz-reset', get_template_directory_uri() .'/css/reset.css', array(), null, 'all');
-		wp_enqueue_style('newmagz-style', get_stylesheet_uri(), array(), null, 'all');
-		wp_enqueue_style('newmagz-linecons', get_template_directory_uri() .'/css/linecons.css', array(), false, 'all' );
-		wp_enqueue_style('newmagz-fontawesome', get_template_directory_uri() .'/css/font-awesome.min.css', array(), null, 'all');
-		wp_enqueue_style('newmagz-owl-carousel', get_template_directory_uri() .'/css/owl.carousel.css', array(), null, 'all');
-		wp_enqueue_style('newmagz-animate', get_stylesheet_directory_uri() .'/css/animate.min.css', array(), false, 'all');
-		wp_enqueue_style('newmagz-slickNav', get_template_directory_uri() .'/css/slicknav.css', array(), null, 'all');
-		wp_enqueue_style('newmagz-justifiedGallery', get_stylesheet_directory_uri() .'/css/justifiedGallery.min.css', array(), false, 'all');
-		wp_enqueue_style('newmagz-flexSliderCss', get_template_directory_uri() .'/css/flexslider.css', array(), null, 'all');
-		wp_enqueue_style('newmagz-responsive', get_template_directory_uri() .'/css/responsive.css', array(), null, 'all');
-		// Load custom CSS file
-		wp_enqueue_style('newmagz-custom', get_template_directory_uri() .'/custom.css', array(), null, 'screen');
+		// wp_enqueue_style('newmagz-reset', get_template_directory_uri() .'/css/reset.css', array(), null, 'all');
+		// wp_enqueue_style('newmagz-style', get_stylesheet_uri(), array(), null, 'all');
+		// wp_enqueue_style('newmagz-linecons', get_template_directory_uri() .'/css/linecons.css', array(), false, 'all' );
+		// wp_enqueue_style('newmagz-fontawesome', get_template_directory_uri() .'/css/font-awesome.min.css', array(), null, 'all');
+		// wp_enqueue_style('newmagz-owl-carousel', get_template_directory_uri() .'/css/owl.carousel.css', array(), null, 'all');
+		// wp_enqueue_style('newmagz-animate', get_stylesheet_directory_uri() .'/css/animate.min.css', array(), false, 'all');
+		// wp_enqueue_style('newmagz-slickNav', get_template_directory_uri() .'/css/slicknav.css', array(), null, 'all');
+		// wp_enqueue_style('newmagz-justifiedGallery', get_stylesheet_directory_uri() .'/css/justifiedGallery.min.css', array(), false, 'all');
+		// wp_enqueue_style('newmagz-flexSliderCss', get_template_directory_uri() .'/css/flexslider.css', array(), null, 'all');
+		// wp_enqueue_style('newmagz-responsive', get_template_directory_uri() .'/css/responsive.css', array(), null, 'all');
+		// // Load custom CSS file
+		// wp_enqueue_style('newmagz-custom', get_template_directory_uri() .'/custom.css', array(), null, 'screen');
 	}
 }
 add_action( 'wp_enqueue_scripts', 'warrior_enqueue_scripts' );
