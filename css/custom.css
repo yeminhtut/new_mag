@@ -1209,7 +1209,6 @@ p.moderate {
     content: '';
     display: block;
     position: absolute;
-    background: red;
     height: 2px;
     left: 22%;
     right: 22%;

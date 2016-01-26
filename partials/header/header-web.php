@@ -28,13 +28,14 @@
 		</div>
 	</div>
 	<?php 
-		if (!is_single() && !is_page_template( 'page-home.php' )&& !is_page_template( 'page-contact.php' ) && !is_page_template( 'page-fullwidth.php' ) 
-			&& !is_category(
-				array(
-					'luxury-spa-retreat','cruises-land-journeys','singapore','indonesia','thailand','japan','australia','malaysia','europe','south-korea','shopping-eating','island-beach','sports-adventure','family-kids')
-					)
-				) {
-				get_template_part('includes/featured-newslider');
-			}	
+		// if (!is_single() && !is_page_template( 'page-contact.php' ) && !is_page_template( 'page-fullwidth.php' ) 
+		// 	&& !is_category(
+		// 		array(
+		// 			'luxury-spa-retreat','cruises-land-journeys','singapore','indonesia','thailand','japan','australia','malaysia','europe','south-korea','shopping-eating','island-beach','sports-adventure','family-kids')
+		// 			)
+		// 		) {
+		// 		get_template_part('includes/featured-newslider');
+		// 	}
+		//get_template_part('includes/featured-newslider');	
 	?>
 </header>

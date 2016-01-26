@@ -57,19 +57,30 @@ if( esc_attr( $newmagz_option['display_back_to_top'] ) ) {
 <link rel="stylesheet" type="text/css" href="http://magdev.tripzilla.com/web/landing_fonts/stylesheet.css">
 <link rel="stylesheet" type="text/css" href="http://magdev.tripzilla.com/web/landing_fonts/bakery_font.css">
 
-<script type="text/javascript" src="http://magdev.tripzilla.com/wp-includes/js/jquery/jquery.js"></script>
+<!-- <script type="text/javascript" src="http://magdev.tripzilla.com/wp-includes/js/jquery/jquery.js"></script> 
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/wow.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/jquery.slicknav.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/jquery.justifiedGallery.min.js"></script>
-<script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/functions.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/functions.js"></script>-->
+
+<script type="text/javascript" src="http://magdev.tripzilla.com/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://magdev.tripzilla.com/web/js/tmp/wow.min.js"></script>
+<script type="text/javascript" src="http://magdev.tripzilla.com/web/js/tmp/owl.carousel.min.js"></script>
+<script type="text/javascript" src="http://magdev.tripzilla.com/web/js/tmp/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="http://magdev.tripzilla.com/web/js/tmp/jquery.fitvids.js"></script>
+<script type="text/javascript" src="http://magdev.tripzilla.com/web/js/tmp/jquery.slicknav.min.js"></script>
+<script type="text/javascript" src="http://magdev.tripzilla.com/web/js/tmp/jquery.justifiedGallery.min.js"></script>
+<script type="text/javascript" src="http://magdev.tripzilla.com/web/js/tmp/functions.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/map_multiple_marker.js"></script>
+
+<!-- <script src="<?php// bloginfo('template_directory'); ?>/js/map_multiple_marker.js"></script>-->
 <script type="text/javascript" src="http://magazine.tripzilla.com/web/js/jquery.backstretch.min.js"></script>
 <script type="text/javascript" src="http://magdev.tripzilla.com/web/js/jquery.visible.min.js"></script>
 <?php// $country_code = get_geoIP(); if ($country_code == 'SG') { ?>
-<script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/single.js"></script>
+<!--<script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/single.js"></script>-->
 <?php// } ?>
 
 </body>

@@ -5,7 +5,7 @@
 	// Load sidebar widgets
 	if ( is_single() ) :
 		
-		get_template_part('partials/widgets/widget','ads');
+		//get_template_part('partials/widgets/widget','ads');
 		get_template_part('partials/widgets/widget','facebook');		
 		echo '<div id="non_sticky_wrapper">';
 			get_template_part('partials/widgets/widget','ads300x250');

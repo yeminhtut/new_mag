@@ -1,28 +1,18 @@
 <?php
-global $newmagz_option;
-
-if( $newmagz_option['display_featured_slider'] ) :
-	
-if( ! isset($newmagz_option['featured_slider_categories']) ) {
-	$cat_list = '';
-} else {
-	$cat_list = implode( ',', (array)$newmagz_option['featured_slider_categories'] );
-}
-
+$cat_list = array('3');
 $args = array(
 	'post_type' => 'post',
 	'post_status' => 'publish',
 	'cat' => $cat_list ,
 	'ignore_sticky_posts' => 1,
-	'tag__not_in' => array(741),
-	'posts_per_page'=> absint( $newmagz_option['featured_slider_show_items'] ),
+	//'tag__not_in' => array(741),
+	'posts_per_page'=> 8,
 );
 
 $posts_feat = new WP_Query();
 $posts_feat->query($args);
-if ( $posts_feat->have_posts() ) :
+if ($posts_feat->have_posts() ) :
 ?>
-
 <!-- Start : Featured Slider -->
 <div id="mainslider">
 	<div class="container clearfix">
@@ -59,10 +49,10 @@ if ( $posts_feat->have_posts() ) :
 						}
 						?>
 						</div>	
-						<h3 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo wp_trim_words( get_the_title(), absint( $newmagz_option['featured_slider_title_length'] ), '...' ); ?></a></h3>
+						<h3 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php// echo wp_trim_words( get_the_title(), absint( $newmagz_option['featured_slider_title_length'] ), '...' ); ?></a></h3>
 						<div class="detail-post">
 							<?php echo warrior_featured_post_meta(); // display post meta ?>
-							<p><?php echo wp_trim_words( get_the_excerpt(), absint( $newmagz_option['featured_slider_word_length']), '...' ); ?></p>
+							<p><?php echo wp_trim_words( get_the_excerpt(), absint( 30 ); ?></p>
 						</div>
 					</div>
 				</article>
@@ -76,5 +66,36 @@ if ( $posts_feat->have_posts() ) :
 <?php
 	endif;
 	wp_reset_postdata();
-	endif;
+	// endif;
 ?>
+<script type="text/javascript">
+	    var owl = $('.warrior-carousel-18');
+    owl.owlCarousel({
+        items:4,
+        loop:true,
+        autoplay:false,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        lazyLoad:true,
+        responsive : {
+        0 : {
+            items: 1,
+            startPosition: 0
+        },
+        480 : {
+
+            items: 2,
+            startPosition: 0
+        },
+        760 : {
+
+            items: 3,
+            startPosition: 0
+        },
+        1000 : {
+            items: 4,
+            startPosition: 0
+        }
+      }
+    });
+</script>

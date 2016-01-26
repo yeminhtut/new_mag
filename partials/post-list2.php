@@ -1,5 +1,6 @@
 <?php 
-$post_list_2_categories = 'Trip Planning';
+//$post_list_2_categories = 'Trip Planning';
+$post_list_2_categories = 'adventure';//change back when live
 $post_list_2_post_per_page = 4;
 $post_list_2_title_limiter = 30;
 $post_list_2_content_limiter = 40;
