@@ -66,10 +66,11 @@ if( esc_attr( $newmagz_option['display_back_to_top'] ) ) {
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/jquery.justifiedGallery.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/functions.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/map_multiple_marker.js"></script>
-<?php $country_code = get_geoIP(); if ($country_code == 'SG') { ?>
-<script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/single.js"></script>
-<?php } ?>
 <script type="text/javascript" src="http://magazine.tripzilla.com/web/js/jquery.backstretch.min.js"></script>
 <script type="text/javascript" src="http://magdev.tripzilla.com/web/js/jquery.visible.min.js"></script>
+<?php// $country_code = get_geoIP(); if ($country_code == 'SG') { ?>
+<script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/single.js"></script>
+<?php// } ?>
+
 </body>
 </html>
