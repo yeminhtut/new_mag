@@ -65,11 +65,11 @@ function warrior_required_plugins() {
 		// 	'external_url'	=> '',
 		// 	'required'		=> true,
 		// ),
-		array(
-			'name'			=> 'Redux Framework',
-			'slug'			=> 'redux-framework',
-			'required'		=> true,
-		),
+		// array(
+		// 	'name'			=> 'Redux Framework',
+		// 	'slug'			=> 'redux-framework',
+		// 	'required'		=> true,
+		// ),
 		// array(
 		// 	'name'			=> 'Recent Tweets Widget',
 		// 	'slug'			=> 'recent-tweets-widget',
@@ -480,7 +480,7 @@ function insertAdAfterParagraph( $insertion, $paragraph_id, $content ) {
 					$paragraphs[$index] .= $closing_p;
 				}
 				if ($paragraph_id_for_desktop == $index + 1) {
-					$paragraphs[$index] .= '<div class="google_ads_mobile" style="clear:both;float:left;width:100%;margin:0 0 20px 0;">'.$insertion.'</div>';
+					$paragraphs[$index] .= '<div class="google_ads_mobile" style="clear:both;width:100%;margin:0 0 20px 0;background:red;height:100px;">'.$insertion.'</div>';
 				}
 			}	
 		}		

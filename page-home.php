@@ -15,11 +15,11 @@
 <div id="maincontent">
     <div class="container clearfix">
         <div id="primary" class="content-area site-main" role="main">
-        <?php get_template_part('partials/post', 'listTab'); ?>
-        <?php get_template_part('partials/post', 'list2'); ?>   
-        <?php get_template_part('partials/post', 'list3'); ?>         
+        <?php// get_template_part('partials/post', 'listTab'); ?>
+        <?php// get_template_part('partials/post', 'list2'); ?>   
+        <?php// get_template_part('partials/post', 'list3'); ?>         
         </div>      
-        <?php get_sidebar('postlisting'); ?>
+        <?php// get_sidebar('postlisting'); ?>
     </div>
 </div>
 <!-- End : Main Content -->

@@ -163,18 +163,3 @@
 		}
 	 ?>
 </header>
-<style type="text/css">
-	a.search-trigger{width:35px;height:35px;font-size:15px;color:#fff;padding:0;top:44px;left:0}.search-submit{background-color:#c51818!important}
-	@media screen and (max-width:480px){#main-header .search-widget{padding:20px 0 20px 28px}}
-	.slicknav_open .slicknav_row{background: #c51818 !important;}
-	.slicknav_nav a:hover{background: #c51818;}
-	.slicknav_row{background: #222;}
-	.slicknav_nav .slicknav_row:hover{background: #222;}
-	.site-navigation ul li a,
-	.site-navigation ul li a a {
-		display: block !important;
-		color: #fff !important;
-		border-radius: 0 !Important;
-		margin: 0 !important;
-	}
-</style>

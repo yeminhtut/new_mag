@@ -5,24 +5,22 @@
 	// Load sidebar widgets
 	if ( is_single() ) :
 		
-		// 	get_template_part('partials/widgets/widget','ads');
+		get_template_part('partials/widgets/widget','ads');
+		get_template_part('partials/widgets/widget','facebook');		
+		echo '<div id="non_sticky_wrapper">';
+			get_template_part('partials/widgets/widget','ads300x250');
+			$check_mobile = detect_mobile(); 
+			if ($check_mobile === false) {
+				dynamic_sidebar( 'warrior-single-sidebar' ); 
+			}					
+			//get_template_part('partials/widgets/widget', 'tripzillaPkgs');
+			//get_template_part('partials/widgets/widget', 'enquirySideber');
 
-		// 	get_template_part('partials/widgets/widget','facebook');
-		
-		// 	echo '<div id="non_sticky_wrapper">';
-		// 	get_template_part('partials/widgets/widget','ads300x250');
-		// 	$check_mobile = detect_mobile(); 
-		// 	if ($check_mobile === false) {
-		// 		dynamic_sidebar( 'warrior-single-sidebar' ); 
-		// 	}					
-		// 	get_template_part('partials/widgets/widget', 'tripzillaPkgs');
-		// 	//get_template_part('partials/widgets/widget', 'enquirySideber');
-
-		// 	//only show at desktop
-		// 	if ($check_mobile === false) {
-		// 		get_template_part('partials/widgets/widget','ads300x600'); 
-		// 	}
-		// echo "</div>";
+			//only show at desktop
+			if ($check_mobile === false) {
+				get_template_part('partials/widgets/widget','ads300x600'); 
+			}
+		echo "</div>";
 	?>
 		<div id="sticky_div"></div>
 	<?php

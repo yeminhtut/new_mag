@@ -94,6 +94,3 @@
 			</div>			
 		</div>
 </div>
-<style type="text/css">
-	#widget-title-recent:after{background:#aaa!important;left:0;right:40%}#footer-widgets .inner img{max-height:175px;min-height:175px}#recent-mini-row .post-list-style ul{margin-top:0}#recent-mini-row .column{height:100px;margin-top:10px}@media only screen and (min-width:300px) and (max-width:480px){#recent-mini-row .post-list-style li{float:none}}
-</style>

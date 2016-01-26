@@ -78,38 +78,3 @@ if ( $posts_feat->have_posts() ) :
 	wp_reset_postdata();
 	endif;
 ?>
-
-<script type="text/javascript">
-jQuery(document).ready(function($) {	
-    var owl = $('.warrior-carousel-18');
-	owl.owlCarousel({
-	    items:4,
-	    loop:true,
-	    autoplay:false,
-	    autoplayTimeout:1000,
-	    autoplayHoverPause:true,
-	    lazyLoad:true,
-	    responsive : {
-        0 : {
-            items: 1,
-            startPosition: 0
-        },
-        480 : {
-
-            items: 2,
-            startPosition: 0
-        },
-        760 : {
-
-            items: 3,
-            startPosition: 0
-        },
-        1000 : {
-            items: 4,
-            startPosition: 0
-        }
-      }
-	});	
-});
-
-</script>

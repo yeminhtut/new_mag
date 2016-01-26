@@ -55,12 +55,6 @@ global $newmagz_option;
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <?php wp_head(); ?>
-<style type="text/css">
-.single-post article.hentry .entry-content p{font-size:16px !important;}.header-search input{min-width:160px;float:right;font-size:14px;width:160px;background:#EBEBEB;border:none}
-.header-search{margin-right:50px;float:right;margin-top:9px;margin-left:10px;position:relative;border:none;border-radius:20px;font-family:Lato;font-weight:400;font-style:normal;color:grey;font-size:15px;padding:0 10px;background-color:#3A3A3A;}
-#searchbar_submit{padding:7px 10px!important;border:none;z-index:999;position:absolute;right:0;background-color:#3A3A3A;margin-right:10px}#input-web{border:none!important;background:#3A3A3A!important}
-.header-search .fa-search{color:#FFF!important}
-</style>
 </head>
 <body <?php body_class(); ?>>
 	<!-- Start: Search Form -->
@@ -73,30 +67,16 @@ global $newmagz_option;
 	<!-- End: Search Form -->
 	<!-- Start : Header Section -->
 	<?php 
-		// $check_mobile = detect_mobile(); 		
-		// switch ($check_mobile) {
-		// 	case 'true':
-		// 		get_template_part('partials/header/header', 'mobile'); 
-		// 		break;			
-		// 	default:
-		// 		get_template_part('partials/header/header', 'web'); 
-		// 		break;
-		// }
+		$check_mobile = detect_mobile(); 		
+		switch ($check_mobile) {
+			case 'true':
+				get_template_part('partials/header/header', 'mobile'); 
+				break;			
+			default:
+				get_template_part('partials/header/header', 'web'); 
+				break;
+		}
 		// get_template_part('partials/header/header', 'mobile'); 
 		// get_template_part('partials/header/header', 'web'); 		
 	?>
 	<!-- End : Header Section -->
-<style type="text/css">
-/*@media screen and (max-width:640px){
-		.header-web{display: none;}
-		.header-mobile{display: block;}
-	}
-	@media screen and (min-width:640px){
-		.header-web{display: block;}
-		.header-mobile{display: none;}
-		.site-navigation ul li a, .site-navigation ul li a a{
-			display: inline-block;
-			color:#333;
-		}
-	}*/
-</style>
